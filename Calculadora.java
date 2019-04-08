@@ -73,3 +73,51 @@ public Calculadora() {
                 Soma();
             }
         });
+	btSoma.setBounds(60, 100, 50, 40);
+		contentPane.add(btSoma);
+		
+		JButton btSub = new JButton("-");
+		btSub.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Subtracao();
+			}
+		});
+		btSub.setBounds(170, 100, 50, 40);
+		contentPane.add(btSub);
+		
+		JButton btMulti = new JButton("X");
+		btMulti.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Multiplicacao();
+			}
+		});
+		btMulti.setBounds(225, 100, 50, 40);
+		contentPane.add(btMulti);
+		
+		JButton btDiv = new JButton("/");
+		btDiv.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Divisao();
+			}
+		});
+		btDiv.setBounds(115, 100, 50, 40);
+		contentPane.add(btDiv);
+		
+		tfResultado = new JTextField();
+		tfResultado.setColumns(10);
+		tfResultado.setBounds(354, 100, 50, 40);
+		contentPane.add(tfResultado);
+		
+		JLabel label = new JLabel("=");
+		label.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		label.setBounds(335, 100, 20, 40);
+		contentPane.add(label);
+		
+		JLabel lblMaisLindaDo = new JLabel(" mais linda do mundo <3");
+		lblMaisLindaDo.setFont(new Font("Microsoft JhengHei Light", Font.PLAIN, 25));
+		lblMaisLindaDo.setBounds(60, 50, 294, 40);
+		contentPane.add(lblMaisLindaDo);
+		
+		
+
+	}
